@@ -1,0 +1,34 @@
+$("*") <!--Untuk memilih semua element-->
+$("p") <!--Untuk memilih semua element <p>-->
+$(this) <!--Untuk memilih element HTML saat ini-->
+$("[href]") <!--Untuk memilih semua element dengan atribut href-->
+$("tr:odd") <!--Untuk memilih semua element <tr> yang ganjil-->
+$("#namaid") <!--Untuk memilih element sesuai dengan id-->
+$("p.intro") <!--untuk memilih semua element <p> dengan class="intro"-->
+$("p:first") <!--Untuk memilih element <p> yang pertama-->
+$(":button") <!--Untuk memilih semua element <button> dan element <input> dari type="button"-->
+$("tr:even") <!--Untuk memilih semua element <tr> yang genap-->
+$(".namakelas") <!--Untuk memilih element sesuai dengan nama kelas-->
+$("ul li:first") <!--Untuk memilih element <li> yang paling awal di <ul> yang awal-->
+$("ul li:first-child") <!--Untuk memilih element <li> yang paling awal disetiap <ul>-->
+$("a[target='_blank']") <!--Untuk memilih semua element <a> dengan nilai dari atribut target "_blank"-->
+$("a[target!='_blank']") <!--Untuk memilih semua element <a> dengan sebuah nilai dari atribut target tidak sama dengan "_blank"-->
+
+<!--Contoh-->
+<html>
+<head>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h3>Ini adalah judul</h3>
+    <p>Ini adalah paragraf pertama.</p>
+    <p>Ini adalah paragraf ke dua.</p>
+    <button>Klik untuk hide paragraf</button>
+</body>
+</html>
